@@ -1,0 +1,89 @@
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+/* https://developer.mozilla.org/es/docs/Web/CSS/box-sizing */
+/* Así definimos el comportamiento de caja para todos los elementos */
+* {
+    box-sizing: border-box;
+  }
+  
+/* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
+.columna {
+float: left;
+width: 25%;
+padding: 10px;
+min-height: 500px;
+}
+
+.izquierda {
+width: 25%;
+}
+
+.derecha {
+width: 75%;
+}
+
+/* Clear floats despues de las columnas para eliminar la superposición */
+.fila:after {
+content: "";
+display: table;
+clear: both;
+}
+
+#c1, #c2 {
+  background-color: rgba(206, 206, 206, 0.678);
+  border-radius: 5px;
+}
+
+/* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
+/* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.iresponsive {
+    padding: 3px;
+    float: left;
+    width: 100%;
+}
+
+body {
+  font-family: Verdana;
+  background-image: url("fondo3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
+/* Así conseguimos que el contenido se vea bien en dispositvos móviles */
+
+@media screen and (max-width: 600px) {
+    .columna {
+      width: 100%;
+    }
+
+    .iresponsive {
+        width: 100%;
+    }
+}
+
+/* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
+
+h2 {
+  padding: 5px;
+  margin: auto;
+  border: solid;
+  border-color: black;
+  border-radius: 5px;
+  background-color: rgba(255, 102, 0, 0.8);
+}
+
+.icono {
+  height: 25px;
+  width: 25px;
+}
+
+table, tr, th {
+  padding: 5px;
+}
