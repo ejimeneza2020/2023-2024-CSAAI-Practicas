@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiro parabólico baloncesto</title>
+
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="tp.css">
+
+    <!-- Código javascript -->
+    <script src="tp.js" defer></script>
+    <script src="crono.js"></script>
+
+</head>
+<body>
+
+    <h1>Tiro parabólico baloncesto</h1>
+    <canvas id="ctiro"></canvas>
+    <img src="canasta3.png" alt="No encontrada" id="canasta3">
+    <img src="canasta3.png" alt="No encontrada" id="canasta3">
+    <img src="pelota1.png" alt="No encontrada" id="pelota1">
+
+    <div>
+        <p id="cronometro">0:0:0</p>
+
+        <p>
+            <b>Velocidad del lanzamiento:</b> <br>
+            <input type="range" id="vel_range" min="0" max="100" > <span id="vel_range_disp"></span>
+        </p>
+        <p>  
+            <b>Ángulo del lanzamiento:</b> <br>
+            <input type="range" id="ang_range" min="0" max="90"> <span id="ang_range_disp"></span> 
+        </p>
+
+        <input type="button" id="btnLanzar" value="Lanzar">
+        <input type="button" id="btnIniciar" value="Iniciar">
+    </div>
+    
+</body>
+</html>
